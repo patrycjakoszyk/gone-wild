@@ -1,0 +1,22 @@
+$color1: #eff0f3;
+$color2: #000000;
+$color3: #bbbbbb;
+$color4: #ce0022;
+
+$color-white: $color1;
+$color-black: $color2;
+$color-grey: $color3;
+$color-pink: $color4;
+
+// fonty
+$font-base: 10px;
+
+// grid
+$grid-base: $font-base;
+
+// odstępy pomiędzy kolumnami
+$gutter: 1.5 * $grid-base;
+
+// breakpoints RWD
+$bp-md: 768px;
+$bp-lg: 1240px;

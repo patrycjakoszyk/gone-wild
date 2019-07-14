@@ -1,0 +1,16 @@
+.nav {
+    &__item {
+        transform: translateX(100%);
+        font-size: $font-base * 1.5;
+        @include medium() {
+            transform: translateX(0%);
+            font-size: $font-base * 2;
+            padding: $font-base;
+        }
+    }
+    &__link {
+        color: $color-white;
+        text-decoration: none;
+        letter-spacing: $font-base * .2;
+    }
+}

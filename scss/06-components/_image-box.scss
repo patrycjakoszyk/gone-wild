@@ -1,0 +1,28 @@
+.image-box {
+    height: 50vh;
+    text-decoration: none;
+    &--one {
+        display: block;
+        background: url(../assets/img/img1.JPG) center/cover no-repeat;
+    }
+    &--two {
+        display: block;
+        background: url(../assets/img/img2.JPG) center/cover no-repeat;
+    }
+    &--three {
+        display: block;
+        background: url(../assets/img/img3.JPG) center/cover no-repeat;
+    }
+    &--four {
+        display: block;
+        background: url(../assets/img/img4.JPG) center/cover no-repeat;
+    }
+    &--five {
+        display: block;
+        background: url(../assets/img/img5.JPG) center/cover no-repeat;
+    }
+    &--six {
+        display: block;
+        background: url(../assets/img/img6.JPG) center/cover no-repeat;
+    }
+}

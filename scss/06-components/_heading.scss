@@ -1,0 +1,31 @@
+.heading {
+    &--h1 {
+        color: $color-white;
+        font-size: $font-base * 2;
+        font-family: 'Kanit', sans-serif;
+        @include medium() {
+            font-size: $font-base * 3;
+        }
+    }
+    &--h2 {
+        color: $color-white;
+        font-size: $font-base * 3;
+        font-family: 'Raleway', sans-serif;
+    }
+    &--h3 {
+        color: $color-grey;
+        font-size: $font-base * 1.5;
+        font-family: 'Raleway', sans-serif;
+        @include medium() {
+            font-size: $font-base * 1.8;
+        }
+    }
+    &--h4 {
+        color: $color-grey;
+        font-size: $font-base * 1.2;
+        font-family: 'Raleway', sans-serif;
+        @include medium() {
+            font-size: $font-base * 1.5;
+        }
+    }
+}

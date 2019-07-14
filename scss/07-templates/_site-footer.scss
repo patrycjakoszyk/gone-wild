@@ -1,0 +1,16 @@
+.site-footer {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    &__link {
+        text-decoration: none;
+        color: $color-white;
+        font-size: $font-base * 1.5;
+        @include medium() {
+            font-size: $font-base * 1.8;
+        }
+    }
+    @include medium() {
+        bottom: 2%;
+    }
+}

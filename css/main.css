@@ -1,0 +1,276 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Kanit&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 10px; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden; }
+
+p {
+  font-size: 15px;
+  line-height: 28px;
+  padding: 10px; }
+
+.container {
+  width: 100%; }
+  @media all and (min-width: 768px) {
+    .container {
+      max-width: 740px; } }
+  @media all and (min-width: 1240px) {
+    .container {
+      max-width: 1140px; } }
+
+.row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0; }
+  @media all and (min-width: 768px) {
+    .row {
+      flex-direction: row; } }
+
+.col {
+  width: 100%; }
+  @media all and (min-width: 768px) {
+    .col--md50 {
+      flex: 0 0 50%;
+      max-width: 50%; } }
+  @media all and (min-width: 768px) {
+    .col--md33 {
+      flex: 0 0 33.33333333%;
+      max-width: 33.33333333%; } }
+  @media all and (min-width: 768px) {
+    .col--md25 {
+      flex: 0 0 25%;
+      max-width: 25%; } }
+  @media all and (min-width: 1240px) {
+    .col--lg50 {
+      flex: 0 0 50%;
+      max-width: 50%; } }
+  @media all and (min-width: 1240px) {
+    .col--lg33 {
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%; } }
+  @media all and (min-width: 1240px) {
+    .col--lg25 {
+      flex: 0 0 25%;
+      max-width: 25%; } }
+
+.heading--h1 {
+  color: #eff0f3;
+  font-size: 20px;
+  font-family: 'Kanit', sans-serif; }
+  @media all and (min-width: 768px) {
+    .heading--h1 {
+      font-size: 30px; } }
+.heading--h2 {
+  color: #eff0f3;
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif; }
+.heading--h3 {
+  color: #bbbbbb;
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif; }
+  @media all and (min-width: 768px) {
+    .heading--h3 {
+      font-size: 18px; } }
+.heading--h4 {
+  color: #bbbbbb;
+  font-size: 12px;
+  font-family: 'Raleway', sans-serif; }
+  @media all and (min-width: 768px) {
+    .heading--h4 {
+      font-size: 15px; } }
+
+.logo {
+  text-decoration: none;
+  color: #eff0f3;
+  font-size: 12px; }
+  @media all and (min-width: 768px) {
+    .logo {
+      font-size: 15px; } }
+
+.btn {
+  color: #eff0f3;
+  transition-duration: .5s;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 8px; }
+  .btn--black:hover {
+    background-color: #7a839c; }
+  @media all and (min-width: 768px) {
+    .btn {
+      display: none; } }
+
+.nav__item {
+  transform: translateX(100%);
+  font-size: 15px; }
+  @media all and (min-width: 768px) {
+    .nav__item {
+      transform: translateX(0%);
+      font-size: 20px;
+      padding: 10px; } }
+.nav__link {
+  color: #eff0f3;
+  text-decoration: none;
+  letter-spacing: 2px; }
+
+.blackout {
+  background-color: rgba(0, 0, 0, 0.6);
+  transition-duration: .8s; }
+  .blackout:hover {
+    opacity: 0.4; }
+
+.image-box {
+  height: 50vh;
+  text-decoration: none; }
+  .image-box--one {
+    display: block;
+    background: url(../assets/img/img1.JPG) center/cover no-repeat; }
+  .image-box--two {
+    display: block;
+    background: url(../assets/img/img2.JPG) center/cover no-repeat; }
+  .image-box--three {
+    display: block;
+    background: url(../assets/img/img3.JPG) center/cover no-repeat; }
+  .image-box--four {
+    display: block;
+    background: url(../assets/img/img4.JPG) center/cover no-repeat; }
+  .image-box--five {
+    display: block;
+    background: url(../assets/img/img5.JPG) center/cover no-repeat; }
+  .image-box--six {
+    display: block;
+    background: url(../assets/img/img6.JPG) center/cover no-repeat; }
+
+.site-header {
+  background-color: #000000;
+  height: 50vh;
+  background-attachment: fixed;
+  position: relative; }
+  @media all and (min-width: 768px) {
+    .site-header {
+      height: 100vh;
+      width: 30vw;
+      float: left;
+      position: fixed; } }
+  .site-header__logo {
+    position: absolute;
+    top: 10%;
+    left: 5%; }
+    @media all and (min-width: 768px) {
+      .site-header__logo {
+        top: 5%; } }
+  .site-header__h1 {
+    position: absolute;
+    width: 45%;
+    top: 35%;
+    left: 5%; }
+    @media all and (min-width: 768px) {
+      .site-header__h1 {
+        width: 80%;
+        top: 20%; } }
+  .site-header__nav {
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    left: 5%; }
+    @media all and (min-width: 768px) {
+      .site-header__nav {
+        top: 35%; } }
+  .site-header__button {
+    position: absolute;
+    right: 5%;
+    top: 8%; }
+
+.site-footer {
+  position: absolute;
+  bottom: 5%;
+  right: 5%; }
+  .site-footer__link {
+    text-decoration: none;
+    color: #eff0f3;
+    font-size: 15px; }
+    @media all and (min-width: 768px) {
+      .site-footer__link {
+        font-size: 18px; } }
+  @media all and (min-width: 768px) {
+    .site-footer {
+      bottom: 2%; } }
+
+.site-section {
+  height: 50vh;
+  position: relative; }
+  @media all and (min-width: 768px) {
+    .site-section {
+      margin-left: 30%; } }
+  .site-section__blackout {
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+  .site-section__h2 {
+    position: absolute;
+    top: 5%;
+    left: 5%; }
+  .site-section__h3 {
+    position: absolute;
+    top: 15%;
+    left: 5%; }
+  .site-section__h4 {
+    position: absolute;
+    bottom: 5%;
+    left: 5%; }
+
+/*# sourceMappingURL=main.css.map */
