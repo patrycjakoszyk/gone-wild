@@ -4,6 +4,9 @@
     @include medium() {
         margin-left: 30%;
     }
+    @include large() {
+        margin-left: 30%;
+    }
     &__blackout {
         position: absolute;
         width: 100%;
@@ -13,16 +16,28 @@
         position: absolute;
         top: 5%;
         left: 5%;
+        @include large() {
+            left: 2%;
+        }
     }
     &__h3 {
         position: absolute;
-        top: 15%;
+        top: 14%;
         left: 5%;
+        @include medium() {
+            top: 16%;
+        }
+        @include large() {
+            left: 2%;
+        }
     }
     &__h4 {
         position: absolute;
         bottom: 5%;
         left: 5%;
+        @include large() {
+            left: 2%;
+        }
     }
 
 }

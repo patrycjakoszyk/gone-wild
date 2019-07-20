@@ -1,0 +1,10 @@
+.site-body {
+    &__to-top {
+        position: fixed;
+        bottom: $grid-base * 1.5;
+        right: $grid-base * 1.5;
+        @include medium () {
+            display: none;
+        }
+    }
+}

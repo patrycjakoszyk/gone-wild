@@ -1,16 +1,37 @@
 .nav {
+    display: none;
+    background-color: darken($color-white, 80%);
+    opacity: .95;
+    @include medium() {
+        display: block;
+        background: none;
+    }
+    &__list {
+        margin-top: 15%;
+    }
+
     &__item {
-        transform: translateX(100%);
-        font-size: $font-base * 1.5;
+        font-size: $font-base * 1.8;
+        padding: $font-base * 1.5;
+        text-align: center;
+        &:hover {
+            background-color: darken($color-white, 75%);
+            @include medium() {
+                background: none;
+            }
+        }
         @include medium() {
-            transform: translateX(0%);
             font-size: $font-base * 2;
             padding: $font-base;
+            text-align: left;
         }
     }
     &__link {
         color: $color-white;
         text-decoration: none;
         letter-spacing: $font-base * .2;
+        &:hover {
+            text-decoration: none;
+        }
     }
 }

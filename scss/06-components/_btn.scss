@@ -4,6 +4,7 @@
     border: 1px solid grey;
     border-radius: $grid-base * .5;
     padding: $grid-base * .8;
+    cursor: pointer;
     
     &--black:hover {
         background-color: darken($color-white, 40%);

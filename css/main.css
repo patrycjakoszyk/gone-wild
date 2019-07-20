@@ -64,7 +64,9 @@ p {
   padding: 10px; }
 
 .container {
-  width: 100%; }
+  width: 100%;
+  padding: 0px;
+  margin: 0px; }
   @media all and (min-width: 768px) {
     .container {
       max-width: 740px; } }
@@ -82,6 +84,7 @@ p {
       flex-direction: row; } }
 
 .col {
+  padding: 0px;
   width: 100%; }
   @media all and (min-width: 768px) {
     .col--md50 {
@@ -117,11 +120,14 @@ p {
       font-size: 30px; } }
 .heading--h2 {
   color: #eff0f3;
-  font-size: 30px;
+  font-size: 20px;
   font-family: 'Raleway', sans-serif; }
+  @media all and (min-width: 768px) {
+    .heading--h2 {
+      font-size: 30px; } }
 .heading--h3 {
   color: #bbbbbb;
-  font-size: 15px;
+  font-size: 12px;
   font-family: 'Raleway', sans-serif; }
   @media all and (min-width: 768px) {
     .heading--h3 {
@@ -147,25 +153,44 @@ p {
   transition-duration: .5s;
   border: 1px solid grey;
   border-radius: 5px;
-  padding: 8px; }
+  padding: 8px;
+  cursor: pointer; }
   .btn--black:hover {
     background-color: #7a839c; }
   @media all and (min-width: 768px) {
     .btn {
       display: none; } }
 
-.nav__item {
-  transform: translateX(100%);
-  font-size: 15px; }
+.nav {
+  display: none;
+  background-color: #20222a;
+  opacity: .95; }
   @media all and (min-width: 768px) {
-    .nav__item {
-      transform: translateX(0%);
-      font-size: 20px;
-      padding: 10px; } }
-.nav__link {
-  color: #eff0f3;
-  text-decoration: none;
-  letter-spacing: 2px; }
+    .nav {
+      display: block;
+      background: none; } }
+  .nav__list {
+    margin-top: 15%; }
+  .nav__item {
+    font-size: 18px;
+    padding: 15px;
+    text-align: center; }
+    .nav__item:hover {
+      background-color: #2b2e39; }
+      @media all and (min-width: 768px) {
+        .nav__item:hover {
+          background: none; } }
+    @media all and (min-width: 768px) {
+      .nav__item {
+        font-size: 20px;
+        padding: 10px;
+        text-align: left; } }
+  .nav__link {
+    color: #eff0f3;
+    text-decoration: none;
+    letter-spacing: 2px; }
+    .nav__link:hover {
+      text-decoration: none; }
 
 .blackout {
   background-color: rgba(0, 0, 0, 0.6);
@@ -195,8 +220,20 @@ p {
     display: block;
     background: url(../assets/img/img6.JPG) center/cover no-repeat; }
 
+.to-top__link {
+  padding: 8px;
+  display: block;
+  color: #eff0f3;
+  font-weight: bold;
+  border: 1px solid grey;
+  border-radius: 5px;
+  transition-duration: .4s; }
+  .to-top__link:hover {
+    background-color: #7a839c; }
+
 .site-header {
   background-color: #000000;
+  width: 100%;
   height: 50vh;
   background-attachment: fixed;
   position: relative; }
@@ -225,14 +262,14 @@ p {
   .site-header__nav {
     position: absolute;
     width: 100%;
-    top: 45%;
-    left: 5%; }
+    height: 100%; }
     @media all and (min-width: 768px) {
       .site-header__nav {
-        top: 35%; } }
+        top: 40%;
+        left: 5%; } }
   .site-header__button {
     position: absolute;
-    right: 5%;
+    right: 15px;
     top: 8%; }
 
 .site-footer {
@@ -256,6 +293,9 @@ p {
   @media all and (min-width: 768px) {
     .site-section {
       margin-left: 30%; } }
+  @media all and (min-width: 1240px) {
+    .site-section {
+      margin-left: 30%; } }
   .site-section__blackout {
     position: absolute;
     width: 100%;
@@ -264,13 +304,33 @@ p {
     position: absolute;
     top: 5%;
     left: 5%; }
+    @media all and (min-width: 1240px) {
+      .site-section__h2 {
+        left: 2%; } }
   .site-section__h3 {
     position: absolute;
-    top: 15%;
+    top: 14%;
     left: 5%; }
+    @media all and (min-width: 768px) {
+      .site-section__h3 {
+        top: 16%; } }
+    @media all and (min-width: 1240px) {
+      .site-section__h3 {
+        left: 2%; } }
   .site-section__h4 {
     position: absolute;
     bottom: 5%;
     left: 5%; }
+    @media all and (min-width: 1240px) {
+      .site-section__h4 {
+        left: 2%; } }
+
+.site-body__to-top {
+  position: fixed;
+  bottom: 15px;
+  right: 15px; }
+  @media all and (min-width: 768px) {
+    .site-body__to-top {
+      display: none; } }
 
 /*# sourceMappingURL=main.css.map */

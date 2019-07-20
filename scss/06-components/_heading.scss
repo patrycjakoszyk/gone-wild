@@ -9,12 +9,15 @@
     }
     &--h2 {
         color: $color-white;
-        font-size: $font-base * 3;
+        font-size: $font-base * 2;
         font-family: 'Raleway', sans-serif;
+        @include medium() {
+            font-size: $font-base * 3;
+        }
     }
     &--h3 {
         color: $color-grey;
-        font-size: $font-base * 1.5;
+        font-size: $font-base * 1.2;
         font-family: 'Raleway', sans-serif;
         @include medium() {
             font-size: $font-base * 1.8;

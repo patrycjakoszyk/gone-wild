@@ -7,26 +7,27 @@
   <meta name="description" content="Jesteśmy pasjonatami gór i to właśnie one będą na pierwszym planie tego blogu.">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="css/main.css">
   <title>Blog o podróżach</title>
 </head>
 <body>
-  <header class="site-header">
+  <header class="site-header" id="top">
     <!-- place for logo -->
     <a href="#" class="logo site-header__logo">GONE-WILD</a>
     <h1 class="heading--h1 site-header__h1">Living young and wild and free</h1>
     <!-- main menu -->
-    <a class="btn site-header__button btn--black">
-        <i class="material-icons">menu</i>
-    </a>
-    <nav class="site-header__nav">
-      <!-- hamburger menu -->
-      <ul>
+    <nav class="nav site-header__nav dropdown-menu">
+      <ul class="nav__list">
         <li class="nav__item"><a href="#" class="nav__link"><strong>Podróże</strong></a></li>
         <li class="nav__item"><a href="#" class="nav__link">O nas</a></li>
         <li class="nav__item"><a href="#" class="nav__link">Kontakt</a></li>
       </ul>
     </nav>
+    <!-- hamburger menu -->
+    <a class="btn site-header__button btn--black">
+      <i class="material-icons">menu</i>
+    </a>
     <!-- footer -->
     <footer class="site-footer">
       <a href="#" class="site-footer__link">✈︎ gone-wild.pl</a>
@@ -130,5 +131,11 @@
       </div>
     </section>
   </main>
-</body>
+  <div class="to-top site-body__to-top">
+    <a href="#top" class="to-top__link">
+      <i class="material-icons">expand_less</i>
+    </a>
+  </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/scripts.js"></script>
 </html>
