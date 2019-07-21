@@ -1,0 +1,12 @@
+.footer {
+    background-color: $color-grey;
+    &--post {
+        color: $color-white;
+        font-size: $font-base * 2.5;
+        text-align: left;
+        @include medium() {
+            font-size: $font-base * 3.5;
+            line-height: $font-base * 4;
+        }
+    }
+}

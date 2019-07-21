@@ -1,0 +1,24 @@
+.site-footer {
+    position: relative;
+    height: 100vh;
+    &--post {
+        position: absolute;
+        width: 80%;
+        margin: 0 auto;
+        right: 0;
+        left: 0;
+        top: 10%;
+    }
+    &__link {
+        position: absolute;
+        text-decoration: none;
+        color: $color-white;
+        font-size: $font-base * 1.5;
+        bottom: 3%;
+        right: 15%;
+        @include medium() {
+            font-size: $font-base * 1.8;
+            right: 5%;
+        }
+    }
+}

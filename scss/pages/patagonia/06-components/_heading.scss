@@ -1,0 +1,41 @@
+.heading {
+    &--h1 {
+        color: $color-white;
+        font-size: $font-base * 4.8;
+        text-align: left;
+        font-family: 'Kanit', sans-serif;
+        @include medium() {
+            font-size: $font-base * 7;
+        }
+    }
+    &--h2 {
+        color: $color-black;
+        font-size: $font-base * 4;
+        font-weight: bold;
+        font-family: 'Raleway', sans-serif;
+        @include medium() {
+            font-size: $font-base * 4;
+        }
+    }
+    &--h3 {
+        color: $color-black;
+        padding-left: $font-base;
+        font-size: $font-base * 4;
+        font-family: 'Raleway', sans-serif;
+        @include medium() {
+            font-size: $font-base * 4;
+        }
+    }
+    &--h4 {
+        color: $color-black;
+        font-size: $font-base * 3.5;
+        line-height: $font-base * 4;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        text-align: left;
+        @include medium() {
+            font-size: $font-base * 4;
+            line-height: $font-base * 4.5;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.nav {
+    &__item {
+        font-size: $font-base * 1.8;
+        padding: $font-base * .5;
+        text-align: left;
+        @include medium() {
+            font-size: $font-base * 3;
+        }
+        &--bold {
+            font-weight: bold;
+        }
+    }
+}

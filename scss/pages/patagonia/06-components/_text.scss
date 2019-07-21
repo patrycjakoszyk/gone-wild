@@ -1,0 +1,17 @@
+.text {
+    // background-color: $color-gold;
+
+    &__bg {
+        border-top: 2px dashed black;
+        background-color: $color-gold;
+    }
+    &--post {
+        color: $color-white;
+        line-height: $font-base* 1.5;
+        text-align: justify;
+        @include medium() {
+            font-size: $font-base * 3;
+            line-height: $font-base * 3;
+        }
+    }
+}

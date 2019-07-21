@@ -1,0 +1,12 @@
+.image-box {
+    height: 100vh;
+    text-decoration: none;
+    &--one {
+        display: block;
+        background: url(../../../assets/img/02_patagonia/img5.JPG) center/cover no-repeat;
+    }
+    &--two {
+        display: block;
+        background: url(../../../assets/img/02_patagonia/img6.JPG) center/cover no-repeat;
+    }
+}

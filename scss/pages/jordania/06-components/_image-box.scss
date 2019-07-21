@@ -1,0 +1,12 @@
+.image-box {
+    height: 100vh;
+    text-decoration: none;
+    &--one {
+        display: block;
+        background: url(../../../assets/img/01_jordania/img3.JPG) center/cover no-repeat;
+    }
+    &--two {
+        display: block;
+        background: url(../../../assets/img/01_jordania/img2.JPG) center/cover no-repeat;
+    }
+}

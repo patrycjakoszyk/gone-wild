@@ -1,0 +1,56 @@
+.text-animation1, .text-animation2 {
+    color: crimson;
+    &--item {
+        font-size: $font-base * 4.5;
+        line-height: $font-base * 4.5;
+        display: inline-block;
+        animation: animation 2s ease-in-out infinite;
+        @include medium () {
+            font-size: $font-base * 16;
+            line-height: $font-base * 16;
+            letter-spacing: $font-base * 4;
+        }
+        &:nth-of-type(2) {
+            animation-delay: 1.2s;
+        }
+        &:nth-of-type(4) {
+            animation-delay: 1s;
+        }
+        &:nth-of-type(6) {
+            animation-delay: 1.5s;
+        }
+        @keyframes animation {
+            0% {transform: translate(-20%,0); }
+            50% {text-shadow: 10px 15px 40px rgba(44, 39, 7, 0.897); }
+            100% {transform: translate(20%,0); }
+        }
+    }
+}
+
+// header {
+//     height: 100vh;
+//     width: 100vw;
+//     margin: 0;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
+//     background: crimson;
+//     font-family: Arial, Helvetica, sans-serif;
+//     overflow-x: hidden;
+//   }
+  
+
+//   span:nth-of-type(2) {
+//       animation-delay: .5s;
+//   }
+  
+//   span:nth-of-type(4) {
+//       animation-delay: 1s;
+//   }
+  
+//   span:nth-of-type(6) {
+//       animation-delay: 1.5s;
+//   }
+  
+  
